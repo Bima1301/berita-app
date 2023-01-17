@@ -1,0 +1,267 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    border-bottom: 2px solid black;
+    // box-shadow: 4px 4px lightsteelblue;
+}
+
+// NAVIGASI BAR
+.first-nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+    background-color: white;
+    box-shadow: inset;
+    .navbar-brand {
+        div {
+            background-color: black;
+
+            p {
+                color: white;
+                padding: 5px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .nav-link {
+        font-weight: 600;
+        color: black;
+    }
+
+    .navbar-toggler {
+        background-color: black;
+    }
+
+    @media only screen and (min-width : 600px) {
+        .navbar-brand {
+            div {
+                p {
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.first-nav {
+    -webkit-box-shadow: 0 5px 5px #888888;
+    -moz-box-shadow: 0 5px 5px #888888;
+    box-shadow: 0 2px 5px #888888;
+  }
+
+.second-nav {
+    .navbar-brand {
+        p {
+            color: white;
+            font-weight: 700;
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (min-width : 600px) {
+        .navbar-brand {
+            p {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+// END NAVIGASI BAR
+
+// SECTION WELCOME
+.welcome-section {
+    .content {
+        padding: 0;
+    }
+}
+
+// END SECTION WELCOME
+
+// HOME SECTION NEWS
+// .first-section{
+//     // border-top: solid 1PX black;
+//     .row{
+//         .title{
+//             color: black;
+//             font-weight: 700;
+//             font-size: 30px;
+//         }
+//     }
+//     .card{
+//         // background-image: url("https://source.unsplash.com/random");
+//         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//         height: 300px;
+//         background-size: cover;
+//         background-position: inherit;
+//         width:400px;
+//         transition: 0.2s;
+//         // border-radius: 50%;
+//         .content{
+//             background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0, 0, 0, 0.721));
+//             position: absolute;
+//             bottom: 0px;
+//             width: 100%;
+//             h2{
+//                 color: white;
+//                 padding-left: 15px;
+//                 padding-top: 30px;
+//             }
+//             p{
+//                 padding-left: 15px;
+//                 color: white;
+//                 font-size: 10px;
+//                 font-weight: 600;
+//             }
+//         }
+//         &:hover{
+//             box-shadow: 0 8px 16px 2 rgba(0, 0, 0, 0.334);
+//             transform: scale(1.05);
+
+//         }
+
+//     }
+// }
+// @media only screen and(min-width : 600px) {
+//     .row{
+//         .title{
+//             color: black;
+//             font-weight: 700;
+//             font-size: 30px;
+//         }
+//     }
+//     .card{
+//         width: 410px !important;
+//     }
+// }
+// // END HOME SECTION NEWS
+
+// // HOME SECTION SPORT
+// .second-section{
+//     .row{
+//         .title{
+//             color: black;
+//             font-weight: 700;
+//             font-size: 30px;
+//         }
+//     }
+//     .card{
+//         background-image: url("/assets/pic2.jpg");
+//         height: 300px;
+//         background-size: cover;
+//         background-position: inherit;
+//         width:500px;
+//         transition: 0.2s;   
+//         .content{
+//             background-color: rgba(255, 255, 255, 0.321);
+//             position: absolute;
+//             bottom: 0px;
+//             p{
+//                 padding-left: 15px;
+//                 color: white;
+//                 font-size: 20px;
+//                 font-weight: 600;
+//             }
+//         }
+//         &:hover{
+//             box-shadow: 0 8px 16px 2 rgba(0, 0, 0, 0.334);
+//             transform: scale(1.05);
+//         }
+
+//     }
+//     @media only screen and(min-width : 600px) {
+//         .row{
+//             .title{
+//                 color: black;
+//                 font-weight: 700;
+//                 font-size: 30px;
+//             }
+//         }
+//         .card{
+//             width: 410px !important;
+
+//         }
+//     }
+// }
+// END HOME SECTION SPORT
+
+// MAIN
+.main-section {
+    .card {
+        .kategori {
+            background-color: rgba(0, 0, 0, 0.604);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.278);
+
+                small {
+                    color: black;
+                }
+            }
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+
+        .judul {
+            h5 {
+                color: black;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+
+        transition: .2s;
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}
+
+.form-signin {
+    margin-top: 150px;
+}
+
+
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-registration {
+    margin-top: 150px;
+    input{
+        border-radius: 0;
+        margin-bottom: -1px;
+    }
+}
+
+// EMD MAIN

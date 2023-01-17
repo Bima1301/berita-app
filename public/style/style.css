@@ -1,0 +1,115 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.first-nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+  background-color: white;
+  box-shadow: inset;
+}
+.first-nav .navbar-brand div {
+  background-color: black;
+}
+.first-nav .navbar-brand div p {
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.first-nav .nav-link {
+  font-weight: 600;
+  color: black;
+}
+.first-nav .navbar-toggler {
+  background-color: black;
+}
+@media only screen and (min-width: 600px) {
+  .first-nav .navbar-brand div p {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+.first-nav {
+  box-shadow: 0 2px 5px #888888;
+}
+
+.second-nav .navbar-brand p {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media only screen and (min-width: 600px) {
+  .second-nav .navbar-brand p {
+    font-size: 50px;
+  }
+}
+
+.welcome-section .content {
+  padding: 0;
+}
+
+.main-section .card {
+  transition: 0.2s;
+}
+.main-section .card .kategori {
+  background-color: rgba(0, 0, 0, 0.604);
+}
+.main-section .card .kategori:hover {
+  background-color: rgba(255, 255, 255, 0.278);
+}
+.main-section .card .kategori:hover small {
+  color: black;
+}
+.main-section .card .kategori a {
+  color: white;
+}
+.main-section .card .kategori a:hover {
+  color: black;
+}
+.main-section .card .judul h5 {
+  color: black;
+}
+.main-section .card .judul h5:hover {
+  color: blue;
+}
+.main-section .card:hover {
+  scale: 1.05;
+}
+
+.form-signin {
+  margin-top: 150px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-registration {
+  margin-top: 150px;
+}
+.form-registration input {
+  border-radius: 0;
+  margin-bottom: -1px;
+}/*# sourceMappingURL=style.css.map */
